@@ -1,0 +1,356 @@
+ /* === Re-usable Variables (assuming they are in your style.css) === */
+
+
+:root {
+    --primary-color: #D4AF37;
+    --dark-bg: #1C1C1E;
+    --card-bg: #2C2C2E;
+    --text-color: #F2F2F7;
+    --text-muted: #8E8E93;
+    --input-bg: #3A3A3C;
+    --border-color: #48484A;
+}
+
+
+ /* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+h1 span, h2 span, h3 span { /* Gold text for specific words */
+    color: var(--primary-color);
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+select, input[type="text"] {
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+select {
+    appearance: none; /* Remove default arrow */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238E8E93' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+    padding-right: 30px; /* Make space for custom arrow */
+}
+
+/* Header */
+header {
+    background-color: var(--dark-bg); /* Slightly different shade if needed, or transparent */
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+   filter: brightness(10.5rem) invert(1) sepia(1) hue-rotate(15deg) saturate(5);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: var(--text-muted);
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--primary-color);
+    background-color: rgba(212, 175, 55, 0.1);
+}
+
+.contact-btn {
+    background-color: var(--primary-color);
+    color: var(--dark-bg);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #b89a30; /* Darker gold */
+}
+
+
+/* About Hero Section */
+.about-hero {
+    padding: 60px 0;
+    text-align: center;
+    background-color: var(--dark-bg); /* Matches page background */
+}
+.about-hero h1 {
+    font-size: 3.2em;
+    margin-bottom: 0.3em;
+}
+.about-hero p {
+    font-size: 1.1em;
+    color: var(--text-muted);
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Two Column Grid Layout */
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: flex-start; /* Align items to the top of their cells */
+}
+
+/* Mission & Focus Section */
+.about-mission-focus h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+.about-mission-focus p {
+    color: var(--text-muted);
+    margin-bottom: 1em;
+    font-size: 0.95em;
+}
+.focus-content {
+    padding-left: 20px; /* Optional: to give some space if needed */
+}
+.focus-title-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.focus-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    margin-right: 15px;
+    /* If using Font Awesome for this icon, style it directly */
+}
+.focus-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+.focus-content ul li {
+    margin-bottom: 12px;
+    font-size: 1em;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+.gold-dot {
+    color: var(--primary-color);
+    font-size: 1.2em; /* Make dot slightly larger */
+    margin-right: 10px;
+    line-height: 1;
+}
+
+
+/* Vision Section */
+.about-vision {
+    padding: 60px 0;
+    text-align: center;
+    background-color: var(--dark-bg); /* Main page background */
+}
+.about-vision h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+.vision-subtitle {
+    font-size: 1.1em;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+.vision-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+.vision-card {
+    background-color: var(--input-bg); /* Darker cards, similar to search inputs */
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+}
+.vision-card-icon {
+    font-size: 2.5em; /* Icon size */
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: inline-block; /* Allows margin-bottom to work */
+}
+.vision-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+.vision-card p {
+    font-size: 0.9em;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* Market Presence Section */
+.about-market-presence h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+.about-market-presence p {
+    color: var(--text-muted);
+    margin-bottom: 1em;
+    font-size: 0.95em;
+}
+.key-markets h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Or var(--primary-color) if preferred */
+}
+.market-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.market-pill {
+    background-color: var(--input-bg); /* Darker than section bg */
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: block; /* Make it block to take full width if needed in column */
+}
+.market-pill h4 {
+    font-size: 1.2em;
+    color: var(--text-color);
+    margin-bottom: 3px;
+}
+.market-pill p {
+    font-size: 0.85em;
+    color: var(--text-muted);
+    margin-bottom: 0;
+}
+
+/* Footer (Assuming styles are already present) */
+footer {
+    background-color: var(--dark-bg);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 0; /* Adjusted because last section-bg-light has margin-bottom */
+    border-top: 1px solid var(--border-color);
+}
+footer p {
+    color: var(--text-muted);
+    font-size: 0.9em;
+}
+
+
+/* === Responsive Adjustments === */
+@media (max-width: 992px) {
+    .about-hero h1 {
+        font-size: 2.8em;
+    }
+    .about-mission-focus h2, .about-market-presence h2 {
+        font-size: 2em;
+    }
+    .about-vision h2 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 2.4em;
+    }
+    .about-hero p, .vision-subtitle {
+        font-size: 1em;
+    }
+
+    .grid-two-columns {
+        grid-template-columns: 1fr; /* Stack columns */
+        gap: 30px;
+    }
+    .focus-content {
+        padding-left: 0; /* Reset padding */
+    }
+    .key-markets {
+        margin-top: 20px; /* Add some space when stacked */
+    }
+    .vision-cards {
+        grid-template-columns: 1fr; /* Stack vision cards */
+    }
+    .section-bg-light, .about-vision, .about-hero {
+        padding: 40px 0;
+    }
+     .about-mission-focus h2, .about-market-presence h2, .about-vision h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2em;
+    }
+    .about-hero p, .vision-subtitle {
+        font-size: 0.9em;
+    }
+     .about-mission-focus h2, .about-market-presence h2, .about-vision h2 {
+        font-size: 1.6em;
+    }
+    .vision-card-icon {
+        font-size: 2em;
+    }
+    .vision-card h3 {
+        font-size: 1.2em;
+    }
+    .market-pill h4 {
+        font-size: 1.1em;
+    }
+}

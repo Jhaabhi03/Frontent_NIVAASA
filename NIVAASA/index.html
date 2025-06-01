@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivaasa - Beyond Spaces, Building Legacies </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Replace with a nice font if you have one -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="images/nivaasaa 1.1-01.png" alt="Nivaasa Logo">
+                <!-- <span>Nivaasa</span> -->
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="properties.html">Properties</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+919893793004" class="btn btn-primary contact-btn">
+                📞  +91 9892379004
+            </a>
+            <button class="mobile-menu-toggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+             <video autoplay muted loop playsinline class="bg-video">
+               <source src="videos/bg-video.mp4" type="video/mp4" />
+                </video>
+            <div class="hero-content">
+                <h1>Beyond Spaces, <br>Building Legacies.</h1>
+                <!-- Optional: Add slider dots if implementing a slider -->
+            </div>
+        </section>
+
+        <!-- Featured Properties Filter -->
+        <section id="#properties" class="property-filter-section">
+            <div class="container">
+                <h2>Featured Properties</h2>
+                <form class="property-filter-form">
+                    <div class="filter-group">
+                        <label for="location">Location</label>
+                        <select id="location" name="location">
+                            <option value="">Select Location</option>
+                            <option value="gurgaon">Gurgaon</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="noida">Noida</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="category">Property Category</label>
+                        <select id="category" name="category">
+                            <option value="">Select Category</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="villa">Villa</option>
+                            <option value="plot">Plot</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="type">Property Type</label>
+                        <select id="type" name="type">
+                            <option value="">Select Type</option>
+                            <option value="rent">For Rent</option>
+                            <option value="sale">For Sale</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price">Price Range</label>
+                        <select id="price" name="price">
+                            <option value="">Select Price</option>
+                            <option value="1cr">Up to 1 Cr</option>
+                            <option value="1-5cr">1 Cr - 5 Cr</option>
+                            <option value="5cr+">5 Cr+</option>
+                        </select>
+                    </div>
+                    <a href="properties.html"><button type="button" class="btn btn-secondary">View All Properties</button></a>
+                    <button type="submit" class="btn btn-primary search-btn"><i class="fas fa-search"></i> Search</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- About Nivaasa Brief -->
+        <section id="#about" class="about-brief">
+            <div class="container grid-2">
+                <div class="about-brief-image">
+                    <img src="images/modernhouse.png" alt="Modern House Model">
+                </div>
+                <div class="about-brief-content">
+                    <h2>About Nivaasa</h2>
+                    <p>At Nivaasa, we are committed to transforming the real estate experience by seamlessly integrating technology with personalized service.</p>
+                    <p>With a strong presence in Gurgaon, Delhi, and Noida, we strive to help clients find the perfect rental or investment property by combining local expertise with global standards.</p>
+                    <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services -->
+        <section class="services-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-home-lg-alt"></i></div>
+                        <h3>Luxury Property Sales</h3>
+                        <p>Expert guidance for finding exceptional properties across premium locations.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Property Management</h3>
+                        <p>Comprehensive management services for investors and property owners.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Investment Advisory</h3>
+                        <p>Strategic advice on real estate investments, market trends, and portfolio optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2>What Our Clients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p>"Nivaasa made our home buying journey incredibly smooth. Their expertise and dedication exceeded our expectations."</p>
+                        <div class="testimonial-author">
+                            <img src="images/face1.png" alt="Grapic Designer">
+                            <div>
+                                <h4>Grapic Designer</h4>
+                                <span>Rohit Singh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Exceptional service, deep market knowledge, and seamless transactions made my home purchase a breeze."</p>
+                        <div class="testimonial-author">
+                           <img src="images/wface.png" alt="Content Writer">
+                           <div>
+                               <h4>Content Writer</h4>
+                               <span>Kritika Grover</span>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"From the first showing to closing, every step was managed with outstanding professionalism and service."</p>
+                        <div class="testimonial-author">
+                            <img src="images/face2.png" alt="Businessman">
+                            <div>
+                                <h4>Businessman</h4>
+                                <span>Kunal Gupta</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-about">
+                    <a href="index.html" class="logo">
+                       <img src="images/nivaasaa 1.1-01.png" alt="Nivaasa Logo">
+                    </a>
+                    <p>Nivaasa is your trusted luxury real estate partner, offering premium properties in India's most sought-after locations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nivaasacity?utm_source=qr&igsh=MTA2NTV6dWd3OWcxZw%3D%3D" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#privacy">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Properties</h4>
+                    <ul>
+                        <li><a href="#">Gurugram</a></li>
+                        <li><a href="#">Delhi</a></li>
+                        <li><a href="#">Noida</a></li>
+                        <li><a href="#">Luxury Villas</a></li>
+                        <li><a href="#">Premium Apartments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Real Estate St, Sector 63, Gurgaon, Haryana 122002</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 98923 793004</p>
+                    <p><i class="fas fa-envelope"></i> info@nivaasa.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Nivaasa. All rights reserved. | Designed with excellence for luxury real estate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
